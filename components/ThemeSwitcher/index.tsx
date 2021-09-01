@@ -7,7 +7,6 @@ const ThemeSwitcher: NextComponentType = () => {
 
   return (
     <Container
-      my="40px"
       display="flex"
       justifyContent="center"
       flexDirection="column"
@@ -15,23 +14,25 @@ const ThemeSwitcher: NextComponentType = () => {
     >
       {colorMode === 'light' ? (
         <IconButton
-          my="20px"
+          my={1}
           isRound
           onClick={toggleColorMode}
           color="gray.800"
           icon={<MoonIcon />}
           variant="outline"
           aria-label="Modo Dark"
+          size="sm"
         />
       ) : (
         <IconButton
-          my="20px"
+          my={1}
           isRound
           onClick={toggleColorMode}
           color="yellow.300"
           icon={<SunIcon />}
           variant="solid"
           aria-label="Modo Light"
+          size="sm"
         />
       )}
     </Container>
