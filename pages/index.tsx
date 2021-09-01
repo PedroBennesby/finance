@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import React from 'react'
 import Head from 'next/head'
+import ThemeSwitcher from '../components/ThemeSwitcher'
 
 const Home: NextPage = () => {
   return (
@@ -8,6 +9,8 @@ const Home: NextPage = () => {
       <Head>
         <title>Finances</title>
       </Head>
+
+      <main></main>
     </div>
   )
 }
